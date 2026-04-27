@@ -1,4 +1,4 @@
-# Análise Experimental: Selection Sort vs. Quick Sort 🚀
+# Análise Experimental: Selection Sort 🚀
 
 Este repositório contém um estudo prático sobre a eficiência de algoritmos de ordenação, comparando uma abordagem de **força bruta** (Selection Sort) com uma de **divisão e conquista** (Quick Sort). O projeto foi desenvolvido como parte das atividades de **Análise de Algoritmos** na Universidade Federal de Roraima (UFRR).
 
