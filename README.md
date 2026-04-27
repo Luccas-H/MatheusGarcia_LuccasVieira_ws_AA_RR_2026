@@ -45,6 +45,25 @@ O projeto utiliza arquivos de texto para garantir a consistência dos testes:
 
 ---
 
+## ⚖️ Análise Comparativa: Selection vs. Quick Sort Otimizado
+
+Para validar a eficiência da implementação, este estudo realizou um benchmark comparativo com um **Quick Sort Otimizado**. 
+
+Enquanto o Selection Sort serviu como base para análise de algoritmos quadráticos, o Quick Sort foi utilizado para demonstrar a performance de algoritmos de divisão e conquista em cenários reais.
+
+### Diferenciais da Otimização do Quick Sort:
+* **Escolha do Pivô:** Implementação de estratégias para evitar o pior caso ($O(n^2)$), como o uso de pivô aleatório ou mediana de três.
+* **Recursividade:** Controle de profundidade de recursão para garantir estabilidade em ranges extremamente altos de dados.
+* **Performance:** Demonstração prática da barreira de desempenho entre as complexidades $O(n^2)$ e $O(n \log n)$.
+
+| Métrica | Selection Sort | Quick Sort Otimizado |
+| :--- | :--- | :--- |
+| **Escalabilidade** | Baixa (sofre com ranges altos) | Alta (estável em grandes volumes) |
+| **Impacto de Arquivo** | Significativo no processamento | Mínimo perto da eficiência do código |
+| **Comportamento** | Curva Quadrática | Curva Linear-Logarítmica |
+
+---
+
 ## 🛠️ Configuração e Execução
 
 ### Pré-requisitos
