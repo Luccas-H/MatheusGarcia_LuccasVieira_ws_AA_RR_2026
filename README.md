@@ -1,60 +1,57 @@
-# Análise Experimental: Selection Sort 🚀
+# Análise Experimental e Profunda: Selection Sort 🚀
 
-Este repositório contém um estudo prático sobre a eficiência de algoritmos de ordenação, comparando uma abordagem de **força bruta** (Selection Sort) com uma de **divisão e conquista** (Quick Sort). O projeto foi desenvolvido como parte das atividades de **Análise de Algoritmos** na Universidade Federal de Roraima (UFRR).
+Este repositório apresenta um estudo técnico detalhado sobre o comportamento do algoritmo **Selection Sort**. O diferencial deste projeto é a análise de desempenho baseada em **datasets externos (arquivos)**, permitindo uma investigação profunda sobre como a implementação lida com diferentes volumes e distribuições de dados.
+
+O projeto foi desenvolvido como parte das atividades de **Análise de Algoritmos** na Universidade Federal de Roraima (UFRR).
 
 ## 📋 Sumário
 - [Visão Geral](#-visão-geral)
-- [Algoritmos Analisados](#-algoritmos-analisados)
+- [O Algoritmo](#-o-algoritmo)
+- [Metodologia e Arquivos](#-metodologia-e-arquivos)
 - [Análise de Complexidade](#-análise-de-complexidade)
-- [Metodologia de Testes](#-metodologia-de-testes)
-- [Configuração do Ambiente](#-configuração-do-ambiente)
-- [Resultados Esperados](#-resultados-esperados)
+- [Configuração e Execução](#-configuração-e-execução)
+- [Resultados e Gráficos](#-resultados-e-gráficos)
 - [Contribuidores](#-contribuidores)
 
 ---
 
 ## 🔍 Visão Geral
-O foco deste projeto é observar o comportamento assintótico dos algoritmos na prática. Através da execução de múltiplos testes com arrays de tamanhos variados, medimos o tempo de resposta e geramos evidências visuais (gráficos) que confirmam as teorias de complexidade computacional.
+Diferente de testes meramente sintéticos, este projeto foca na **análise profunda**. Isso inclui a revisão da eficiência do código Python implementado, o impacto da leitura de arquivos de entrada no tempo total de execução e a visualização detalhada da curva de crescimento do algoritmo em comparação com limites teóricos.
 
-## 💡 Algoritmos Analisados
+## 💡 O Algoritmo: Selection Sort
+A implementação foca na ordenação por comparação que, a cada iteração, busca o menor elemento e o posiciona no início do array.
+* **Foco do estudo:** Observar o custo fixo de trocas vs. o custo crescente de comparações.
+* **Implementação:** O código foi otimizado para clareza acadêmica, facilitando a análise da estrutura de loops aninhados.
 
-### 1. Selection Sort
-Funciona selecionando o menor elemento de uma lista e trocando-o com o elemento na primeira posição, repetindo o processo para o restante da lista.
-* **Vantagem:** Simplicidade e baixo uso de memória auxiliar.
-* **Desvantagem:** Ineficiente para grandes conjuntos de dados.
+---
 
-### 2. Quick Sort
-Utiliza a estratégia de dividir para conquistar, escolhendo um "pivô" e particionando o array em sub-arrays de elementos menores e maiores que o pivô.
-* **Vantagem:** Extremamente veloz para a maioria dos casos práticos.
-* **Desvantagem:** No pior caso (pivô mal escolhido), sua performance cai drasticamente.
+## 🧪 Metodologia e Arquivos
+O projeto utiliza arquivos de texto para garantir a consistência dos testes:
+1.  **Datasets:** Arquivos contendo ranges diversificados de números (ordenados, inversamente ordenados e aleatórios).
+2.  **Entrada/Saída:** O script lê os dados dos arquivos, executa a ordenação e armazena os logs de tempo.
+3.  **Análise de Código:** Revisão linha a linha para identificar gargalos operacionais.
 
 ---
 
 ## 📊 Análise de Complexidade
 
-| Algoritmo | Melhor Caso | Caso Médio | Pior Caso | Memória Auxiliar |
-| :--- | :--- | :--- | :--- | :--- |
-| **Selection Sort** | $O(n^2)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ |
-| **Quick Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ |
+| Caso | Complexidade de Tempo | Complexidade de Espaço |
+| :--- | :--- | :--- |
+| **Melhor Caso** | $O(n^2)$ | $O(1)$ |
+| **Caso Médio** | $O(n^2)$ | $O(1)$ |
+| **Pior Caso** | $O(n^2)$ | $O(1)$ |
+
+*Nota: Mesmo que o vetor esteja ordenado, o Selection Sort mantém sua complexidade quadrática devido à necessidade de percorrer o restante do array para confirmar o menor elemento.*
 
 ---
 
-## 🧪 Metodologia de Testes
-Para garantir a precisão dos dados:
-1.  **Geração de Dados:** São gerados arrays de números inteiros aleatórios utilizando `random.sample` para evitar duplicatas ou `random.randint`.
-2.  **Ranges:** Os testes variam de $N=100$ até $N=10.000$ (ou mais, dependendo do hardware).
-3.  **Métricas:** O tempo é capturado em segundos com precisão de milissegundos utilizando a biblioteca `time`.
-4.  **Repetibilidade:** O processo é repetido para garantir que picos isolados de processamento não distorçam a média.
-
----
-
-## 🛠️ Configuração do Ambiente
+## 🛠️ Configuração e Execução
 
 ### Pré-requisitos
-* Python 3.10 ou superior.
-* Pip (gerenciador de pacotes).
+* Python 3.x
+* Matplotlib (para visualização dos resultados)
 
-### Instalação
+### Instalação e Uso
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/Mtheusgs/MatheusGarcia_LuccasVieira_ws_AA_RR_2026.git](https://github.com/Mtheusgs/MatheusGarcia_LuccasVieira_ws_AA_RR_2026.git)
