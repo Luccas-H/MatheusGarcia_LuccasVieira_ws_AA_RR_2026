@@ -9,9 +9,6 @@ O projeto foi desenvolvido como parte das atividades de **Análise de Algoritmos
 - [O Algoritmo](#-o-algoritmo)
 - [Metodologia e Arquivos](#-metodologia-e-arquivos)
 - [Análise de Complexidade](#-análise-de-complexidade)
-- [Configuração e Execução](#-configuração-e-execução)
-- [Resultados e Gráficos](#-resultados-e-gráficos)
-- [Contribuidores](#-contribuidores)
 
 ---
 
