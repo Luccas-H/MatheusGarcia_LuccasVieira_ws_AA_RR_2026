@@ -16,7 +16,7 @@ O projeto foi desenvolvido como parte das atividades de **Análise de Algoritmos
 ---
 
 ## 🔍 Visão Geral
-Diferente de testes meramente sintéticos, este projeto foca na **análise profunda**. Isso inclui a revisão da eficiência do código Python implementado, o impacto da leitura de arquivos de entrada no tempo total de execução e a visualização detalhada da curva de crescimento do algoritmo em comparação com limites teóricos.
+Diferente de testes meramente sintéticos, este projeto foca na **análise profunda**. Isso inclui a revisão da eficiência do código C implementado, o impacto da leitura de arquivos de entrada no tempo total de execução e a visualização detalhada da curva de crescimento do algoritmo em comparação com limites teóricos.
 
 ## 💡 O Algoritmo: Selection Sort
 A implementação foca na ordenação por comparação que, a cada iteração, busca o menor elemento e o posiciona no início do array.
@@ -69,6 +69,7 @@ Enquanto o Selection Sort serviu como base para análise de algoritmos quadráti
 ### Pré-requisitos
 * Python 3.x
 * Matplotlib (para visualização dos resultados)
+* GCC
 
 ### Instalação e Uso
 1. Clone o repositório:
